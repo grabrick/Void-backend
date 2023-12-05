@@ -1,0 +1,5 @@
+{
+    "MONGOURL": "mongodb+srv://grabrick:V5Kq0gweZkJlFSqp@cluster0.kjricwc.mongodb.net/",
+    "PORT": 5555,
+    "SECRETKEY": "JopaapoJ"
+}

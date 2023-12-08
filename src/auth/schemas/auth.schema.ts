@@ -3,23 +3,26 @@ import { HydratedDocument } from 'mongoose';
 
 export type TestDocument = HydratedDocument<User>;
 
-class ActivePresset {
-  @Prop({ type: String })
-  namePresset: string | null;
-
-  @Prop({ type: Number })
-  price: number;
-
-  @Prop({ type: Map, of: String })
-  params: Map<string, string>;
-}
-
 class Balance {
   @Prop({ type: Number, default: 0 })
   count: number;
 
   @Prop({ type: String, default: 'dollars' })
   currency: string;
+}
+
+class ActivePresset {
+  @Prop({ type: String })
+  presetID: string | null;
+
+  @Prop({ type: String })
+  namePresset: string | null;
+
+  @Prop({ type: Object })
+  price: number;
+
+  @Prop({ type: Map, of: String })
+  params: Map<string, string>;
 }
 
 @Schema()

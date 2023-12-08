@@ -11,3 +11,9 @@ export class PresetCard {
   readonly rating: number;
   readonly price: Price;
 }
+
+export class PropsPresetCard {
+  readonly id: string;
+  readonly name: string;
+  readonly price: Price;
+}
